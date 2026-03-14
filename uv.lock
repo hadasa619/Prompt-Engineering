@@ -530,6 +530,23 @@ wheels = [
 ]
 
 [[package]]
+name = "groq"
+version = "1.1.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anyio" },
+    { name = "distro" },
+    { name = "httpx" },
+    { name = "pydantic" },
+    { name = "sniffio" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/46/28/61ce4b51d090c0fd4c9218514c91256b4406b993fe9637c6aa5606390116/groq-1.1.0.tar.gz", hash = "sha256:342005ff9d5586c24cbee9247c83ee7c7103ab7dc1185c55624dbe00627c8f4d", size = 150111, upload-time = "2026-03-08T23:11:55.471Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0e/8b/d397030c49d8d8bf2b332c4d4ee2ee3452edfc1d99fa5bbd72e615531e7a/groq-1.1.0-py3-none-any.whl", hash = "sha256:29fcef1d4ed9130c500ed54dd4aa06ca74bb7635d36d17c1abec7b9fc605c06d", size = 139583, upload-time = "2026-03-08T23:11:54.439Z" },
+]
+
+[[package]]
 name = "grpcio"
 version = "1.78.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1500,6 +1517,7 @@ dependencies = [
     { name = "certifi" },
     { name = "google-generativeai" },
     { name = "gradio" },
+    { name = "groq" },
     { name = "httpx" },
     { name = "openai" },
     { name = "pip-system-certs" },
@@ -1511,6 +1529,7 @@ requires-dist = [
     { name = "certifi", specifier = ">=2026.1.4" },
     { name = "google-generativeai", specifier = ">=0.8.6" },
     { name = "gradio", specifier = ">=6.6.0" },
+    { name = "groq", specifier = ">=1.1.0" },
     { name = "httpx", specifier = ">=0.28.1" },
     { name = "openai", specifier = ">=2.21.0" },
     { name = "pip-system-certs", specifier = ">=5.3" },
